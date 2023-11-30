@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Ubuntu&display=swap");
+
+.todo-list {
+  padding-top: 1%;
+  width: 100%;
+  height: 97.8vh;
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.add_card {
+  padding-top: 1%;
+  width: 800px;
+  height: 180px;
+  margin: 0 auto;
+  backdrop-filter: blur(120px);
+  border-radius: 15px;
+}
+h1 {
+  font-family: "Rajdhani", sans-serif;
+}
+.textShineBlack {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #000 20%,
+    #520909 30%,
+    #3f1d3c 70%,
+    #929090 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+
+.add_inp {
+  display: block;
+  margin-top: 2%;
+  margin-left: 15%;
+  padding-left: 5px;
+  width: 550px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 27px;
+  text-transform: capitalize;
+  font-family: "Rajdhani", sans-serif;
+  color: #2f3555;
+  font-weight: 500;
+}
+
+.add_btn {
+  margin-top: 3%;
+  margin-left: 35%;
+  width: 220px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 23px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+}
+.add_btn:hover {
+  background: #2f3555;
+  color: #8e5089;
+}
+
+.lists {
+  margin-top: 5%;
+  margin-left: 27%;
+  padding: 10px;
+  width: 600px;
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: darkgrey;
+  text-transform: capitalize;
+  border-bottom: 1px solid #929090;
+}
+.edit {
+  margin-left: 70%;
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: cadetblue;
+}
+.edit:hover {
+  color: rgb(118, 204, 207);
+}
+
+.trash {
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: darkred;
+}
+.trash:hover {
+  color: rgb(173, 2, 2);
+}
+
+@media screen and (max-width:500px) {
+  .todo-list{
+    width: 100%;
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .add_card{
+    width: 95%;
+    height: 35%;
+  }
+
+  .add_inp{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .add_btn{
+    margin-top: 10%;
+    margin-left: 25%;
+  }
+
+  .lists{
+    margin-left: 5%;
+    width: 87%;
+  }
+
+  .edit{
+    margin-left: 65%;
+  }
+}
